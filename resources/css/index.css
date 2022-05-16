@@ -32,6 +32,9 @@ nav {
 footer {
   background: var(--main);
 }
+.btn-green {
+  color: var(--nav);
+}
 .text-orange {
   color: var(--orange);
 }

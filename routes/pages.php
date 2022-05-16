@@ -18,6 +18,13 @@ $obRouter->get('/estoque', [
   }
 ]);
 
+/* rota LOGIN */
+$obRouter->get('/login', [
+  function() {
+    return new Response(200, Pages\Login::getLogin());
+  }
+]);
+
 /* Rotas DINAMICAS */
 $obRouter->get('/pagina/{idPagina}/{acao}', [
   function ($idPagina, $acao) {
